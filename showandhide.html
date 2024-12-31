@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para{
+            display: none;
+        }
+
+    </style>
+    <script>
+        function show(){
+            let para1 = document.getElementById('para')
+            para1.style.display ='block'
+        }
+        function hide(){
+            let para1 = document.getElementById('para')
+            para1.style.display ='none'
+        }
+        function toogle(){
+            let para1 = document.getElementById('para')
+            if (para1.style.display == "none") {
+                para1.style.display="block";
+                
+            } else {
+                para1.style.display="none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>welcome</h1>
+    <h2>show and hide</h2>
+    <button onclick="show()">show</button>
+    <button onclick="hide()">hide</button>
+    <button onclick="toogle()">hide and show</button>
+    <p id="para">javascript hide and show</p>
+</body>
+</html>

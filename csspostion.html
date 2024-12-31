@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+        .a{
+            position: static;
+            background-color:blue;
+            height: 100px;
+            width: 100px;
+        }
+        .b{
+            position: relative;
+            background-color:rgb(229, 255, 0);
+            height: 100px;
+            width: 100px;
+            top: 20px;
+            left: 30px;
+            z-index: 1;
+        }
+        .c{
+            position: relative;
+            background-color :green;
+            height: 400px;
+            width: 400px;
+            margin-top: 100px;
+        }
+        .d{
+            position: absolute;
+            background-color:greenyellow;
+            height: 100px;
+            width: 100px;
+            left: 50px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>welcome</h1>
+    <div class="a">
+        static
+    </div>
+    <div class="b">
+        relative
+    </div>
+    <div class="c">
+        <div class="d">abosulte</div>
+    </div>
+    
+</body>
+</html>

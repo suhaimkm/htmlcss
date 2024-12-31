@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function switchon(){
+            let s =document.getElementById('s')
+            s.src = "bulb.on.jpg"
+        }
+        function switchoff(){
+            let s =document.getElementById('s')
+            s.src = "bulboff.jpg"
+        }
+        function toggleonoff(){
+            let s =document.getElementById('s')
+            if(s.src.includes("bulb.on.jpg")){
+                s.src="bulboff.jpg"
+            }
+            else{
+                s.src="bulb.on.jpg"
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Image change</h1>
+    <div>
+        <button onclick="switchon()">
+            on
+        </button>
+        <button onclick="switchoff()">
+            oFF
+        </button>
+        <button onclick="toggleonoff()">
+            toggle
+        </button>
+    </div>
+    <div class="bulb">
+        <img id="s" src="bulboff.jpg" alt="bulb" width="400px" height="400px">
+    </div>
+    
+</body>
+</html>

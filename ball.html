@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            background-image: url(bg6.jpg);
+            height:100px;
+            width:100px;
+            border-radius: 50%;
+            top: 10px;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+            animation: ball 3s infinite ease-in-out;
+        }
+        @keyframes ball {
+            0%{
+                top: 0px;
+                background-image: url(bg6.jpg)
+            }
+            50%{
+                top: 300px;
+                background-image: url(bg6.jpg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: serif;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            min-height:100vh;
+        }
+        header{
+            color: black;
+            background-color: lightskyblue;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 25px;
+            text-align: center;
+        }
+        nav{
+            background-color: blanchedalmond;
+            text-align: center;
+            padding: 1 rem;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            background-color: rgba(0, 0, 0, 0.536);
+            text-decoration: none;
+            padding: 0.5em 1em;
+            display: inline-block;
+
+        }
+        nav a:hover{
+            background-color: blue;
+        }
+        section{
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+        }
+        aside{
+            background-color: aquamarine;
+            flex: 1 1 200px;
+            order: 2;
+            padding: 25px;
+        }
+        main{
+            background-color: aqua;
+            flex: 2 1 400px;
+            order: 1;
+            padding: 25px;
+        }
+        footer{
+            background-color: blue;
+            font-size: 1rem;
+            font-weight: bolder;
+            color: aliceblue;
+            text-align: center;
+        }
+        @media (max-width:750px) {
+            section{
+                flex-direction: column;
+            }
+            aside,main{
+                flex: 1 1 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <header>
+            <h1>WEB DESIGN</h1>
+        </header>
+        <nav>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+            <a href="#">home</a>
+        </nav>
+        <section>
+            <aside>
+                <h2>side bar</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, architecto iure assumenda laboriosam modi, natus dolor quis pariatur neque cumque vel, vero quae ipsam perferendis dignissimos minus at maiores officia Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni iure corrupti ducimus delectus impedit quis. Ipsa sint, assumenda maiores aut adipisci dolore quidem aspernatur labore, voluptatum numquam tempora, totam incidunt?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloribus cumque quo, dolore atque expedita praesentium, sapiente blanditiis fugit reprehenderit, vitae quas ipsam! Delectus atque aperiam inventore rem sunt quae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsa quisquam earum? Sunt earum modi quos optio similique veniam mollitia temporibus. Dolorum libero exercitationem temporibus quaerat labore iure nobis atque..</p>
+            </aside>
+            <main>
+                <h2>main</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ratione neque reiciendis, quam dolorum necessitatibus dolor exercitationem autem velit. Dolore similique iste repudiandae. Quibusdam natus doloremque dolores, nostrum debitis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, saepe error ea, itaque explicabo eius architecto omnis animi dolorum molestias nobis iure sed officiis repudiandae! Ea quibusdam consequatur omnis eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempore eius quae iusto voluptate maxime recusandae, labore aperiam sint alias qui, corporis placeat expedita dicta amet vitae! Distinctio, saepe nesciunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda placeat esse recusandae, harum ullam fugiat unde minus cum voluptate dicta voluptas provident quam delectus praesentium, architecto numquam rerum? Ratione, reiciendis.</p>
+            </main>
+            
+        </section>
+        <footer>
+                <p>copyright-&copy;</p>
+            </footer>
+    </div>
+    
+</body>
+</html>

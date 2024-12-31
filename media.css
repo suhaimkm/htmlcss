@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+}
+header{
+    font-family: cursive;
+    text-align: center;
+    text-decoration: underline;
+    line-height: 100px;
+    background-color: blue;
+    color: aliceblue;
+}
+.con {
+    padding: 5px;
+}
+p{
+    margin: 20px;
+    font-family: fantasy;
+}
+footer{
+    text-align: center;
+    line-height: 100px;
+    background-color: darkblue;
+    color: azure;
+}
+@media (min-width:600px) and (max-width:899px)  {
+    header {
+        background-color: blueviolet;
+        line-height: 50px;
+    }
+    h1{
+        font-size: 16px;
+    }
+    p{
+        margin: 10px;
+        font-size: 12px;
+        background-color: chartreuse;
+    }
+    footer{
+        line-height: 40px;
+        background-color: darkgreen;
+    }
+}
+@media (min-width:400px) and (max-width:599px)  {
+    header {
+        background-color: rgb(46, 226, 43);
+        line-height: 30px;
+    }
+    h1{
+        font-size: 14px;
+    }
+    p{
+        margin: 5px;
+        font-size: 11px;
+        background-color: burlywood;
+    }
+    footer{
+        line-height: 25px;
+        background-color: crimson;
+    }
+}
+@media  (max-width:599px)  {
+    header {
+        background-color: rgb(226, 43, 43);
+        line-height: 20px;
+    }
+    h1{
+        font-size: 12px;
+    }
+    p{
+        margin: 5px;
+        font-size: 10px;
+        background-color: chocolate;
+    }
+    footer{
+        line-height: 15px;
+        background-color: chartreuse;
+    }
+}
